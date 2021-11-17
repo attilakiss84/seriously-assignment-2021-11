@@ -1,0 +1,500 @@
+{
+  "canvas": {
+    "version": "2.2.10",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -215,
+    "scrollLeft": -329.6666666666665,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "elevator-performance",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnDefault",
+        "columnAutoIncrement",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "elevators",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "5801faed-35f8-4f9b-9d48-39bd9c05494f"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "bd2487ce-b53d-4927-8ab7-d5de30a901f7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 173.75,
+          "top": 215,
+          "zIndex": 22,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bb1b247f-b440-4d14-b381-aaddcd401ff0"
+      },
+      {
+        "name": "elevator_moves",
+        "comment": "",
+        "columns": [
+          {
+            "name": "elevator_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 65.59716796875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "8eb5413b-d90d-4789-a9a1-be9847f839a2"
+          },
+          {
+            "name": "from_floor",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.51904296875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "d7277b46-c97c-4984-a781-606497118c98"
+          },
+          {
+            "name": "departed_at",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.392578125,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "de33bb98-95cb-47e8-a192-2d94625e6c11"
+          },
+          {
+            "name": "floor_to",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "04067240-811a-49b1-90e7-ae0302db6368"
+          },
+          {
+            "name": "arrived_at",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "830581c5-904d-46e9-bdbd-b3bac61301b3"
+          },
+          {
+            "name": "people_in",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "254ce5aa-100b-4928-aa12-231c0d079363"
+          },
+          {
+            "name": "people_out",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.33984375,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "64e1335b-3fc1-4d85-bc8e-243541824447"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 738.25,
+          "top": 58.5,
+          "zIndex": 26,
+          "widthName": 93.76806640625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8d83110d-7c06-4ba6-9231-fcd625bdf01d"
+      },
+      {
+        "name": "passenger_journeys",
+        "comment": "",
+        "columns": [
+          {
+            "name": "elevator_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 65.59716796875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "b3520ad7-0bf6-41ad-ba7d-25fea24b62e4"
+          },
+          {
+            "name": "arrived_at",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "4e1b2bf5-0354-4b62-940e-3ee76cf86af8"
+          },
+          {
+            "name": "entered_at",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.16259765625,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "3a6723a6-37cf-4474-bffe-809dad7d6bb5"
+          },
+          {
+            "name": "floor_from",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.51904296875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "d9ac7c15-6696-4060-84e0-bcf27690b74f"
+          },
+          {
+            "name": "left_at",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "a6a25684-8581-4f83-be7d-6298ebc8b1e5"
+          },
+          {
+            "name": "floor_to",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "f410118c-a398-4e98-9eb1-70314b9fba5f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 738.4167,
+          "top": 338.972,
+          "zIndex": 12,
+          "widthName": 119.076171875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "c2b55121-af73-4ed5-9ec4-ca5b098b4232"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bb1b247f-b440-4d14-b381-aaddcd401ff0",
+          "columnIds": [
+            "5801faed-35f8-4f9b-9d48-39bd9c05494f"
+          ],
+          "x": 508.32177734375,
+          "y": 297.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c2b55121-af73-4ed5-9ec4-ca5b098b4232",
+          "columnIds": [
+            "b3520ad7-0bf6-41ad-ba7d-25fea24b62e4"
+          ],
+          "x": 738.4167,
+          "y": 434.972,
+          "direction": "left"
+        },
+        "constraintName": "fk_elevators_to_passenger_journeys",
+        "visible": true,
+        "id": "267e0555-e047-4b61-901b-d2980dda799b"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bb1b247f-b440-4d14-b381-aaddcd401ff0",
+          "columnIds": [
+            "5801faed-35f8-4f9b-9d48-39bd9c05494f"
+          ],
+          "x": 508.32177734375,
+          "y": 242.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "8d83110d-7c06-4ba6-9231-fcd625bdf01d",
+          "columnIds": [
+            "8eb5413b-d90d-4789-a9a1-be9847f839a2"
+          ],
+          "x": 738.25,
+          "y": 164.75,
+          "direction": "left"
+        },
+        "constraintName": "fk_elevators_to_elevator_moves",
+        "visible": true,
+        "id": "ccb11b58-d888-4238-9e07-062e1a51b615"
+      }
+    ]
+  }
+}
